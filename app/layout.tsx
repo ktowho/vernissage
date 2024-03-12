@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
-import Main from "./components/Main";
+import Hero from "./components/Hero";
+
 
 export const metadata: Metadata = {
   title: "vernissage",
   description: "Platform for contemporary digital art",
 };
+
+
 
 export default function RootLayout({
   children,
@@ -17,8 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="hide-scrollbar">
         <Navbar />
-        <Main />
-        {children}
+        <Hero />
       </body>
     </html>
   );

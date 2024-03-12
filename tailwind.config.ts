@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        hero: ['var(--font-neueMachina-Regular)'],
+      },
       colors: {
         white: '#fff',
       },
