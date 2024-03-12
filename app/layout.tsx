@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 
+import localFont from '@next/font/local'
 
 export const metadata: Metadata = {
   title: "vernissage",
