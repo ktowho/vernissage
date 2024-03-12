@@ -1,21 +1,12 @@
-import Image from 'next/image'
 import React from 'react'
-import main_bg from '@/public/png/main-bg.png'
 
 const Main = () => {
   return (
     <>
-      <div className='relative overflow-hidden h-dvh z-[-1]'>
-        <Image
-          className='z-[0] bg'
-          alt={'Background Image'}
-          src={main_bg}
-          placeholder='blur'
-          fill
-          style={{
-            objectFit: "cover",
-          }}
-        />
+      <div className="relative h-dvh overflow-hidden z-[-1]
+      bg-[url('/bg.gif')] bg-[#6a134f] bg-center bg-cover bg-no-repeat bg-blend-multiply contrast-90
+      ">
+
       </div>
       <h1>Anime</h1>
     </>
