@@ -22,6 +22,7 @@ export default function RootLayout({
       <body className="hide-scrollbar">
         <Navbar />
         <Hero />
+        <Hero />
       </body>
     </html>
   );
