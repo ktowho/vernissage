@@ -12,7 +12,6 @@ const neueMachinaRegularFont = localFont({
 
 const Hero = () => {
   return (
-    <>
       <div className="grid grid-rows-[150px_auto_150px_70px] justify-items-center
       h-dvh overflow-hidden z-[-1] py-[40px] 
       bg-[url('/bg.gif')] bg-[#6a134f] bg-center bg-cover bg-no-repeat bg-blend-multiply">
@@ -28,8 +27,6 @@ const Hero = () => {
         <Image src={scrollIcon} alt='scroll' height={104} width={104}
         className='animate-[spin_10s_linear_infinite] self-center'/>
       </div>
-
-    </>
   )
 }
 
