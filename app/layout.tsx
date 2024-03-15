@@ -4,13 +4,18 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 
 import localFont from '@next/font/local'
+import Projects from "./components/Projects";
 
 export const metadata: Metadata = {
   title: "vernissage",
   description: "Platform for contemporary digital art",
 };
 
-
+const neueMachinaRegularFont = localFont({
+  src: '../public/fonts/NeueMachina-Regular.woff2',
+  display: 'swap',
+  variable: '--font-neueMachina-Regular'
+})
 
 export default function RootLayout({
   children,
@@ -21,8 +26,8 @@ export default function RootLayout({
     <html lang="en">
       <body className="hide-scrollbar">
         <Navbar />
-        <Hero />
-        <Hero />
+        <Hero font={neueMachinaRegularFont}/>
+        <Projects font={neueMachinaRegularFont}/>
       </body>
     </html>
   );
