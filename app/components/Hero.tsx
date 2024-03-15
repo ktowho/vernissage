@@ -1,10 +1,15 @@
 import React from 'react'
 import localFont from '@next/font/local'
 import Image from 'next/image'
+
+import { neueMachinaRegularFont } from './Fonts'
+
 import heroLogo from '@/public/hero-logo.png'
 import scrollIcon from '@/public/scroll.png'
 
-const Hero = ({font}: {font: any}) => {
+const font = neueMachinaRegularFont
+
+const Hero = () => {
   return (
     <section>
       <div className="grid grid-rows-[150px_auto_150px_70px] justify-items-center

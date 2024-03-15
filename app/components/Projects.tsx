@@ -1,6 +1,9 @@
 import React from 'react'
+import { manropeFont } from './Fonts'
 
-const Projects = ({font}: {font: any}) => {
+const font = manropeFont
+
+const Projects = () => {
   return (
     <section className='h-dvh bg-[#717171] section-padding'>
       <h1 className='uppercase'>

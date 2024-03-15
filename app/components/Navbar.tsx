@@ -1,14 +1,8 @@
 'use client'
 import React, { useState } from 'react'
-import { Manrope } from 'next/font/google'
 import Link from 'next/link'
 
-const manropeFont = Manrope({
-  weight: '600',
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-manrope-semibold'
-})
+import { manropeFont } from './Fonts'
 
 const navList = [
   { name: 'Main', link: '/' },
