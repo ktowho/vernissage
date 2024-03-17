@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 import { manropeFont } from '../configs/Fonts'
 
-const navList = ['main', 'projects', 'artists', 'highlights', 'joining', 'founders', 'contact us']
+const navList = ['main', 'projects', 'highlights', 'artists',  'joining', 'founders', 'contact us']
 
 const Navbar = () => {
 

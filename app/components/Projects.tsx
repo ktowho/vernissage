@@ -2,7 +2,6 @@
 
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
 
 import Title from './Title'
 import Tag from './Tag'
@@ -10,10 +9,10 @@ import Tag from './Tag'
 import { neueMontrealMediumFont, neueMontrealRegularFont } from '../configs/Fonts'
 
 import picture from '@/public/technology-humanity.png'
-import { CalendarSvg, LocationSvg, VectorSvg } from '../configs/Svg'
+import { CalendarSvg, LocationSvg } from '../configs/Svg'
+import ExploreButton from './ExploreButton'
 
 const textFont = neueMontrealRegularFont
-const buttonFont = neueMontrealMediumFont
 
 const Projects = () => {
   return (
@@ -47,13 +46,7 @@ const Projects = () => {
             </div>
 
           </div>
-
-          {/* Button  */}
-          <div className={`${buttonFont.variable} flex items-center justify-between w-[271px] px-[49px] py-[18px] bg-white rounded-[20px] font-montrealMedium text-[18px]`}>
-            <Link href='/' >Explore project</Link>
-            <VectorSvg />
-          </div>
-
+          <ExploreButton name='Explore project' url=''/>
         </div>
         <div>
           <Image
