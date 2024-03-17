@@ -1,5 +1,5 @@
 import React from 'react'
-import { neueMontrealMediumFont } from './Fonts'
+import { neueMontrealMediumFont } from '../configs/Fonts'
 import { motion } from 'framer-motion'
 
 const font = neueMontrealMediumFont

@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 
 import Projects from "./components/Projects";
+import Artists from "./components/Artists";
 
 const metadata: Metadata = {
   title: "vernissage",
@@ -26,6 +27,7 @@ export default function RootLayout({
         <Navbar />
         <Hero />
         <Projects />
+        <Artists />
     </body>
     </html >
   );

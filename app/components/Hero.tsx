@@ -2,7 +2,7 @@ import React from 'react'
 import localFont from '@next/font/local'
 import Image from 'next/image'
 
-import { neueMachinaRegularFont } from './Fonts'
+import { neueMachinaRegularFont } from '../configs/Fonts'
 
 import heroLogo from '@/public/hero-logo.png'
 import scrollIcon from '@/public/scroll.png'

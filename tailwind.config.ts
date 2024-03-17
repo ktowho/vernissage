@@ -9,7 +9,9 @@ module.exports = {
     extend: {
       fontFamily: {
         hero: ['var(--font-neueMachina-Regular)'],
-        nav: ['var(--font-manrope-semibold)']
+        montrealRegular: ['var(--font-neueMontreal-Regular)'],
+        montrealMedium: ['var(--font-neueMontreal-Medium)'],
+        manropesb: ['var(--font-manrope-semibold)']
       },
       colors: {
         white: '#fff',

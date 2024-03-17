@@ -19,3 +19,9 @@ export const neueMontrealMediumFont = localFont({
   display: 'swap',
   variable: '--font-neueMontreal-Medium'
 })
+
+export const neueMontrealRegularFont = localFont({
+  src: './../../public/fonts/NeueMontreal-Regular.woff2',
+  display: 'swap',
+  variable: '--font-neueMontreal-Regular'
+})
