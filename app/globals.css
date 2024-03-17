@@ -10,6 +10,16 @@
   box-sizing: border-box;
 }
 
+/* html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  transition: 100ms;
+}
+
+section {
+  scroll-snap-align: start;
+} */
+
 /* body {
   font-family: Neue Montreal;
   --font-family: "Neue Montreal", sans-serif;

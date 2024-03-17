@@ -1,18 +1,20 @@
 'use client'
-import React, { useState } from 'react'
+import React, { forwardRef, useState } from 'react'
 import Link from 'next/link'
 
 import { manropeFont } from './Fonts'
 
-const navList = [
-  { name: 'Main', link: '/' },
-  { name: 'Projects', link: '/' },
-  { name: 'Artworks', link: '/' },
-  { name: 'Artists', link: '/' },
-  { name: 'Joining', link: '/' },
-  { name: 'Founders', link: '/' },
-  { name: 'Contact us', link: '/' },
-]
+// const navList = [
+//   { name: 'main'},
+//   { name: 'projects'},
+//   { name: 'artworks'},
+//   { name: 'artists'},
+//   { name: 'joining'},
+//   { name: 'founders'},
+//   { name: 'contact us'},
+// ]
+
+const navList = ['main', 'projects', 'artworks', 'highlights', 'joining', 'founders', 'contact us']
 
 const Navbar = () => {
 
@@ -24,7 +26,13 @@ const Navbar = () => {
 
       <ul className={`${open ? 'flex' : 'hidden'} text-white/[0.8] flex-col items-center bg-black/[0.8] rounded-t-[20px] pt-2`}>
         {navList.map((item) => (
-          <li className='mb-1 hover:text-white'><Link href={item.link}>{item.name}</Link></li>
+          <li className='mb-1 hover:text-white'><button className=' first-letter:capitalize' onClick={() => {
+            const element = document.getElementById(`${item}-section`)
+            element?.scrollIntoView({
+              behavior: 'smooth'
+            })
+            setOpen(!open)
+          }}>{item}</button></li>
         ))}
       </ul>
       {/* Menu Button  */}
