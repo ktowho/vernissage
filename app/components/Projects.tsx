@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 
 import Title from './Title'
 import Tag from './Tag'
@@ -14,13 +15,35 @@ import ExploreButton from './ExploreButton'
 
 const textFont = neueMontrealRegularFont
 
+const projectVariants = {
+  initial: {
+    opacity: 0,
+    y: 50,
+  },
+  animate: () => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.2,
+      duration: 1,
+    }
+  })
+}
+
 const Projects = () => {
   return (
     <section id='projects-section' className='min-h-dvh bg-[#373737] section-padding'>
       <h1 className='uppercase'>
         <Title title={'projects'} />
       </h1>
-      <div className='grid grid-cols-2 gap-[150px] mt-[96px]'>
+      <motion.div className='grid grid-cols-2 gap-[150px] mt-[96px]'
+        variants={projectVariants}
+        initial='initial'
+        whileInView='animate'
+        viewport={{
+          once: true
+        }}
+      >
         <div>
           <div className='flex gap-[9px] mb-[32px]'>
             <Tag tagName={'Offline'} />
@@ -46,7 +69,7 @@ const Projects = () => {
             </div>
 
           </div>
-          <ExploreButton name='Explore project' url=''/>
+          <ExploreButton name='Explore project' url='' />
         </div>
         <div>
           <Image
@@ -54,7 +77,7 @@ const Projects = () => {
             alt='Technology and Humanity Canvas'
           />
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 }

@@ -2,16 +2,16 @@
 import React, { forwardRef, useState } from 'react'
 import Link from 'next/link'
 
-import { manropeFont } from '../configs/Fonts'
+import { manropeSemibold } from '../configs/Fonts'
 
-const navList = ['main', 'projects', 'highlights', 'artists',  'joining', 'founders', 'contact us']
+import { navList } from '../configs/Data'
 
 const Navbar = () => {
 
   const [open, setOpen] = useState(false)
 
   return (
-    <nav className={`${manropeFont.variable} fixed bottom-[40px] left-[50%] -translate-x-1/2 z-50 font-manropesb`}>
+    <nav className={`${manropeSemibold.variable} fixed bottom-[40px] left-[50%] -translate-x-1/2 z-50 font-manropesb`}>
       {/* Nav List  */}
 
       <ul className={`${open ? 'flex' : 'hidden'} text-white/[0.8] flex-col items-center bg-black/[0.8] rounded-t-[20px] pt-2`}>

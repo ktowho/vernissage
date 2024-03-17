@@ -25,21 +25,22 @@ const buttonVariants = {
 
 const ExploreButton = ({ name, url }: any) => {
   return (
-    <motion.div
-      variants={buttonVariants}
-      initial='initial'
-      whileInView='animate'
-      viewport={{
-        once: true
-      }}
-    >
-      <Link href={url}>
-        <div className={`${font.variable} flex items-center justify-between w-[271px] px-[49px] py-[18px] bg-white rounded-[20px] font-montrealMedium text-[18px]`}>
-          {name}
-          <VectorSvg />
-        </div>
-      </Link>
-    </motion.div>
+
+    <Link href={url} className='inline-block'>
+      <motion.div className={`${font.variable} flex items-center justify-between w-[271px] px-[49px] py-[18px] bg-white rounded-[20px] font-montrealMedium text-[18px]`}
+        variants={buttonVariants}
+        initial='initial'
+        whileInView='animate'
+        viewport={{
+          once: true
+        }}
+      >
+        {name}
+        <VectorSvg />
+      </motion.div>
+    </Link>
+
+
 
   )
 }

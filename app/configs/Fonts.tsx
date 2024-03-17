@@ -7,11 +7,25 @@ export const neueMachinaRegularFont = localFont({
   variable: '--font-neueMachina-Regular'
 })
 
-export const manropeFont = Manrope({
+export const manropeSemibold = Manrope({
   weight: '600',
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-manrope-semibold'
+})
+
+export const manropeMedium = Manrope({
+  weight: '500',
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-manrope-medium'
+})
+
+export const manropeLight = Manrope({
+  weight: '300',
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-manrope-light'
 })
 
 export const neueMontrealMediumFont = localFont({

@@ -1,7 +1,7 @@
 import React from 'react'
-import { manropeFont } from '../configs/Fonts'
+import { manropeSemibold } from '../configs/Fonts'
 
-const font = manropeFont
+const font = manropeSemibold
 
 const Tag = ({tagName} : any) => {
   return (

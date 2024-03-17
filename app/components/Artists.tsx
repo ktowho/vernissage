@@ -5,40 +5,7 @@ import Title from './Title'
 
 import Artist from './Artist'
 
-const artistsList = [
-  {
-    name: 'Kirill Rave',
-    img: '/kirill_rave.png',
-  },
-  {
-    name: 'Anastasia Skabelkina',
-    img: '/anastasia_skabelina.png',
-  },
-  {
-    name: 'Victoria Dyryagina',
-    img: '/victoria_dyryagina.png',
-  },
-  {
-    name: 'Rebecca Sira',
-    img: '/rebecca_sira.png',
-  },
-  {
-    name: 'Denis Lotarev',
-    img: '/denis_lotarev.png',
-  },
-  {
-    name: 'Yana German',
-    img: '/yana_german.png',
-  },
-  {
-    name: 'Alessia Mocia',
-    img: '/alessia_mocia.png',
-  },
-  {
-    name: 'Sasha Malysheva',
-    img: '/sasha_malysheva.png',
-  }
-]
+import { artistsList } from '../configs/Data'
 
 const Artists = () => {
   return (

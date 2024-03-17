@@ -1,3 +1,4 @@
+import { manropeSemibold } from './app/configs/Fonts';
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -11,7 +12,9 @@ module.exports = {
         neueMachinaRegular: ['var(--font-neueMachina-Regular)'],
         montrealRegular: ['var(--font-neueMontreal-Regular)'],
         montrealMedium: ['var(--font-neueMontreal-Medium)'],
-        manropesb: ['var(--font-manrope-semibold)']
+        manropeSemibold: ['var(--font-manrope-semibold)'],
+        manropeMedium: ['var(--font-manrope-medium)'],
+        manropeLight: ['var(--font-manrope-light)'],
       },
       colors: {
         white: '#fff',
