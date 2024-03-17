@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        hero: ['var(--font-neueMachina-Regular)'],
+        neueMachinaRegular: ['var(--font-neueMachina-Regular)'],
         montrealRegular: ['var(--font-neueMontreal-Regular)'],
         montrealMedium: ['var(--font-neueMontreal-Medium)'],
         manropesb: ['var(--font-manrope-semibold)']

@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -15,7 +17,7 @@ const buttonFont = neueMontrealMediumFont
 
 const Projects = () => {
   return (
-    <section id='projects-section' className='h-dvh bg-[#373737] section-padding'>
+    <section id='projects-section' className='min-h-dvh bg-[#373737] section-padding'>
       <h1 className='uppercase'>
         <Title title={'projects'} />
       </h1>
