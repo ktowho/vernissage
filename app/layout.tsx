@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Artists from "./components/Artists";
 import Highlights from "./components/Highlights";
+import JoinUs from "./components/JoinUs";
 
 export const metadata: Metadata = {
   title: "vernissage",
@@ -26,6 +27,7 @@ export default function RootLayout({
         <Projects />
         <Highlights />
         <Artists />
+        <JoinUs />
     </body>
     </html >
   );
