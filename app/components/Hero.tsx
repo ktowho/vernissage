@@ -23,7 +23,7 @@ const Hero = () => {
           className='mb-3'
         />
         <h1 className={`${font.variable} leading-none uppercase text-center
-        w-[700px] text-[70px] font-neueMachinaRegular text-white self-center`}> Platform for contemporary digital art</h1>
+        w-[350px] md:w-[700px] text-[40px] md:text-[70px] font-neueMachinaRegular text-white self-center`}> Platform for contemporary digital art</h1>
         <Image src={scrollIcon} alt='scroll' height={104} width={104}
         className='animate-[spin_10s_linear_infinite] self-center'/>
       </div>

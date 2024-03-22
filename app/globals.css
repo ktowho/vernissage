@@ -14,7 +14,7 @@
 
   /* Section */
   .section-padding {
-    @apply px-[160px] py-[80px];
+    @apply px-[20px] py-[80px] md:px-[160px] md:py-[80px];
   }
 }
 

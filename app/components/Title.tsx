@@ -38,7 +38,7 @@ const Title = ({ title }: any) => {
 
   return (
     <>
-      <motion.div className={`${font.variable} leading-none text-[45px] font-hero text-white mb-[30px]`}
+      <motion.div className={`${font.variable} leading-none text-[30px] md:text-[45px] font-hero text-white mb-[30px]`}
         variants={titleVariants}
         initial='initial'
         whileInView='animate'

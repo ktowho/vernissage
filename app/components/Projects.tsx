@@ -36,7 +36,7 @@ const Projects = () => {
       <h1 className='uppercase'>
         <Title title={'projects'} />
       </h1>
-      <motion.div className='grid grid-cols-2 gap-[150px] mt-[96px]'
+      <motion.div className='flex flex-wrap xl:flex-nowrap gap-[150px] mt-[96px]'
         variants={projectVariants}
         initial='initial'
         whileInView='animate'
@@ -54,7 +54,7 @@ const Projects = () => {
 
           <div className={`${textFont.variable} text-white font-montrealRegular mb-[45px]`}>
 
-            <p className={` mt-[48px] mb-[80px] font-montrealRegular text-[24px] w-[486px]`}>Could dreams and nightmares be the potent driving force behind our creative processes, the mysterious catalysts Igniting the flame of artistic Inspiration?</p>
+            <p className={` mt-[48px] mb-[80px] font-montrealRegular text-[24px]`}>Could dreams and nightmares be the potent driving force behind our creative processes, the mysterious catalysts Igniting the flame of artistic Inspiration?</p>
 
             <div className='flex gap-[67px] text-[18px]'>
               <div className='flex gap-[21px]'>
@@ -71,7 +71,7 @@ const Projects = () => {
           </div>
           <ExploreButton name='Explore project' url='' />
         </div>
-        <div>
+        <div className=' w-full'>
           <Image
             src={picture}
             alt='Technology and Humanity Canvas'
